@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10111b">
+  <meta name="description" content="Cursos e ferramentas para criadores de conteúdo, vídeos e lives.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Creator Academy</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Creator Academy início">
+      <span class="brand-mark">▶</span><span>Creator<span class="accent">Academy</span></span>
+    </a>
+    <button id="installBtn" class="install-btn" hidden>＋ Instalar</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SUA CENTRAL DE CRIAÇÃO</p>
+        <h1>Transforme ideias em <span class="gradient-text">conteúdo incrível.</span></h1>
+        <p class="hero-sub">Aprenda a criar vídeos melhores, configurar suas lives e desenvolver sua estratégia — um passo de cada vez.</p>
+        <a href="#cursos" class="primary-btn">Começar a aprender <span>→</span></a>
+      </div>
+      <div class="hero-card">
+        <div class="live-dot"></div><span class="card-label">SEU PROGRESSO</span>
+        <div class="progress-number" id="progressPercent">0%</div>
+        <div class="progress-track"><div id="overallProgress" class="progress-fill"></div></div>
+        <p id="progressCaption">Sua jornada começa aqui.</p>
+        <div class="mini-stats"><div><strong id="completedCount">0</strong><span>aulas concluídas</span></div><div><strong>4</strong><span>trilhas iniciais</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="cursos">
+      <div class="section-heading"><div><p class="eyebrow">APRENDA NA PRÁTICA</p><h2>Suas trilhas</h2></div><span class="section-note">Aulas rápidas e práticas</span></div>
+      <div class="filter-row" role="group" aria-label="Filtrar cursos">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="youtube">YouTube</button>
+        <button class="filter" data-filter="obs">OBS Studio</button>
+        <button class="filter" data-filter="lives">Lives</button>
+        <button class="filter" data-filter="estrategia">Estratégia</button>
+      </div>
+      <div id="courseGrid" class="course-grid"></div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="section-heading"><div><p class="eyebrow">APRENDA ASSISTINDO</p><h2>Vídeos das aulas</h2></div><span class="section-note">Tutoriais do YouTube</span></div>
+      <div class="checklist-panel">
+        <p class="panel-sub">Dentro de cada aula, toque em “Assistir vídeos” para abrir tutoriais relacionados ao assunto no YouTube. Você pode assistir e voltar para continuar a missão prática.</p>
+        <a class="primary-btn" href="https://www.youtube.com/results?search_query=tutorial+criacao+de+conteudo+youtube+OBS+Studio+portugues" target="_blank" rel="noopener">Explorar vídeos para criadores ↗</a>
+      </div>
+    </section>
+
+    <section class="section" id="checklist">
+      <div class="section-heading"><div><p class="eyebrow">ANTES DE ENTRAR AO VIVO</p><h2>Checklist de live</h2></div></div>
+      <div class="checklist-panel">
+        <p class="panel-sub">Marque os itens antes de começar sua transmissão. Seu progresso fica salvo neste aparelho.</p>
+        <div id="checklistItems" class="checklist-items"></div>
+        <button id="resetChecklist" class="text-btn">Desmarcar tudo</button>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">▶ Creator<span class="accent">Academy</span></div><p>Aprenda. Pratique. Publique.</p><small>Versão inicial • Seu progresso é salvo neste dispositivo.</small></footer>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <a href="#inicio"><span>⌂</span>Início</a><a href="#cursos"><span>▤</span>Cursos</a><a href="#videos"><span>▷</span>Vídeos</a><a href="#checklist"><span>☑</span>Checklist</a>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Creator Academy",
+  "short_name": "Creator Academy",
+  "description": "Cursos e ferramentas para criadores de conteúdo, vídeos e lives.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0d14",
+  "theme_color": "#10111b",
+  "icons": [
+    {"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
